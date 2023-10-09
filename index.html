@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <style>
+      div.class {
+        font-family: PT Mono;
+        font-size: 28px;
+      }
+      button {
+        color: rgb(0, 136, 255);
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(0, 136, 255);
+        background: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: rgb(43, 255, 0);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card"></div>
+    <div class="weather-app"></div>
+    <form class="search-form">
+      <div class="row">
+        <div class="col-9">
+          <button input="type" type="temperature">Search</button>
+          <input
+            type="search"
+            placeholder="Type a city......"
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+          />
+        </div>
+      </div>
+      <div class="col-6">
+        <ul>
+          <li>Precipitation: 0%</li>
+          <li>Humidity: 75%</li>
+          <li>Wind:2 km/h</li>
+          <li>Pressure 30.25</li>
+          <li>Dew point48°</li>
+          <li>Visibility 9.9</li>
+        </ul>
+        <div class="col-3">
+          <ul>
+            <li>🌙</li>
+            <span class="temperature" id="'temperature">54</span>
+            <span class="units">
+              <a href="#" id="celsisu-link">°C</a>
+              "|"
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </ul>
+        </div>
+      </div>
+    </form>
+    <h1>Millville, New Jersey</h1>
+    <ul>
+      <li id="date">Thursday 20:25</li>
+      <li>Prefectly Clear</li>
+    </ul>
+    <script src="src/index.js"></script>
+  </body>
+</html>
